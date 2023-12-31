@@ -7,4 +7,6 @@ The run the application by calling
 ```
 python main.py
 ```
-then click on the http url provided and enjoy!
+then click on the http url provided and use!
+
+You can stop the program by going back to the commandline and press <b>ctrl + c</b>
