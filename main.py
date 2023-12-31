@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+import random
 
 app = Flask(__name__)
 
@@ -36,4 +37,5 @@ def reset_number():
     return jsonify({'number': current_number})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=8701,debug=True)
+    num = random.randint(9000,11100)
+    app.run(host='0.0.0.0',port=num,debug=True)
