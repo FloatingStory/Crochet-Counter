@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+        .column {
+            float: left;
+            width: 50%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <h1>Welcome {{username}}!</h1>
+                <div>round:</div>
+                <input type="text" name="hi">
+                <div>crochet pattern:</div>
+                <input type="text" name="bye">
+        
+                <h2>Stitch COUNTER:</h2>
+                <h3>spacebar for +1 and down arrow for -1 to the counter :D</h3>
+                <div id="counter" style="font-size: 250px;">0</div>
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                <script src="{{url_for('static', filename='JS/counter.js')}}"></script>
+        
+                <input type="submit" id="reset_button" value="Reset to 0" onclick="resetNum()">
+            </div>
+
+            <div class="column">
+                <h1>Remember:</h1>
+                <p></p><b>half double crochet:</b> yarn over, put hook through stitch and yarn over, pull through only stitch, yarn over again and pull through all 3 loops on the hook</p>
+                <p></p>
+                <p><b>double crochet:</b> yarn over, put hook through stitch and yarn over, pull through only stitch, yarn over and pull through 2 loops on the hook, yarn over and pull through all 2 loops on the hook</p>
+                <p></p>
+                <p><b>triple crochet:</b> yarn over twice, put hook through next stitch, yarn over and pull only thorugh stitch, yarn over and pull through first 2 loops on hook, yarn over again and pull through first 2 loops on hook, yarn over and pull through remaining loops</p>
+                <p></p>
+                <p><b>increase:</b> do 2 single crochets in the same stitch</p>
+                <p></p>
+                <p><b>decrease:</b> put hook through stitch and yarn over, pull through only the stitch, put hook into next stitch and yarn over, pull through only the stitch, yarn over and go through all 3 loops on the hook</p>
+            </div>
+          </div>
+    </body>
+</html>
