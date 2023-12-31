@@ -3,7 +3,7 @@ This app uses Flask, call the following to download the dependency
 ```
 pip install Flask
 ```
-The run the application by call
+The run the application by calling
 ```
 python main.py
 ```
